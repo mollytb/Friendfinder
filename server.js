@@ -2,7 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-
+//CANNOT GET THE ROUTES TO WORK
 //var htmlRoutes = require("./app/routing/htmlRoutes")(app);
 //var apiRoutes = require("./app/routinh/apiRoutes")(app);
 //Users/Molly/Desktop/FriendFinder/routing/htmlRoutes.js
@@ -25,20 +25,21 @@ app.use(bodyParser.json({
 }));
 
 
-
+//CANNOT GET THE ROUTES TO WORK IN A SEPARATE FILE
 //app.use(apiRoutes());
 //app.use(htmlRoutes());
 
-app.get("/", function (req, res) {
-    // restaurant info
-    res.sendFile(path.join(__dirname, "app/public/home.html"));
-});
+
 app.get("/survey", function (req, res) {
     // restaurant info
     res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
 app.get("/api/friends", function (req, res) {
     res.json(friends);
+});
+app.get("*", function (req, res) {
+    // restaurant info
+    res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
 
 
@@ -60,13 +61,13 @@ app.post("/api/friends", function (req, res) {
 
     // Calculate the difference between the user's scores and others
 
-    var totalDifference = 0;
+    //var totalDifference = 0;
 
     // Loop through all the friend possibilities in the database.
     for (var i = 0; i < friends.length; i++) {
 
         console.log(friends[i].name);
-        totalDifference = 0;
+        //totalDifference = 0;
 
         // Then loop through all the scores of each friend
         for (var j = 0; j < friends[i].scores[j]; j++) {
