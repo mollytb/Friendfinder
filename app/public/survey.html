@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Friend Finder Survey</h1>
+    </div>
+    <div class="container">
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4 class="text-primary">Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4 class="text-primary">Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+        <h3 class="text-success text-center">On a scale of 1 to 5 please respond to the following statements.</h3>
+        <h4 class="text-secondary text-center">(5 being strongly agree and 1 being strongly disagree)</h4>
+        <div class="row">
+            <div class="col-6">
+
+                <h5 class="text-primary">1. You consider yourself a nerd.</h5>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+            <div class="col-6">
+
+
+                <h5 class="text-primary">2. You like watching football.</h5>
+                <select data-placeholder="" class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">3. You enjoy reading.</h5>
+                <select data-placeholder="" class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">4. You think politics are important.</h5>
+                <select data-placeholder="" class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">5. You are considerate of others.</h5>
+                <select data-placeholder="" class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+            <div class="col-6">
+
+
+                <br/>
+                <h5 class="text-primary">6. You like to see movies at the theatre.</h5>
+                <select data-placeholder="" class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">7. You like animals.</h5>
+                <select data-placeholder="" class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br/>
+
+            </div>
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">8. You think intelligence is important in a friendship.</h5>
+                <select data-placeholder="" class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+
+                <br/>
+                <h5 class="text-primary">9. You think humor is important in a friendship.</h5>
+                <select data-placeholder="" class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+            </div>
+            <div class="col-6">
+
+
+                <br/>
+                <h5 class="text-primary">10. You think new experiences are important.</h5>
+                <select data-placeholder="" class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br/>
+
+
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-info btn-md" id="submit">Submit</button>
+        <hr>
+        <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/smcnaught/FriendFinder">GitHub Repo</a><br><br>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3 id="matchName">text here</h3>
+                        <img src="" alt="" id="matchImg" style="max-width: 300">
+                    </div>
+                </div>
+    </div>
+    <br/>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Hide the Modal on load
+        $("#myModal").modal("hide");
+        // Variable to hold array of the customer's scores.
+        var scoresArr = [];
+        // Determine the user's most compatible friend.
+        // Function to determine if the user has filled in all the forms when they click submit.
+        function formValidation() {
+            var isValid = true;
+            $('.form-control').each(function () {
+                if ($(this).val() === '') {
+                    isValid = false;
+                };
+            });
+            $('.chosen-select').each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                };
+            });
+            return isValid;
+        };
+        // Capture the user's data when they click Submit.
+        $("#submit").click(function () {
+            event.preventDefault();
+            formValidation();
+            // If all fields have been filled out, submit the form.
+            if (formValidation() == true) {
+                // Create an object for the user's data
+                var custData = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val(),
+                    scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $(
+                        "#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $(
+                        "#q9").val(), $("#q10").val(), ],
+                    // Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
+                    custScores: function () {
+                        for (var i = 0; i < custData.scores.length; i++) {
+                            var custScores = parseInt(custData.scores[i]);
+                            scoresArr.push(custScores);
+                        }
+                        return scoresArr;
+                    }
+                };
+
+                function checkScore(response, custData) {
+                    var totalDifference = function (a, b) {
+                        return Math.abs(a - b);
+                    };
+                    var total = 0;
+                    for (var i = 0; i < response.length; i++) {
+
+                        total += totalDifference(response[i], custData[i]);
+                    }
+                    return total;
+                }
+                // Grab the URL of the website
+                var currentURL = window.location.origin;
+                // Create an AJAX to post the data to the friends API.
+                $.post(currentURL + "/api/friends", custData, function (data) {
+                    // Get the results from the AJAX post so that the best match's name and photo
+                    // can be displayed.
+                });
+                $.get("/api/friends", function (response) {
+                    console.log(response);
+                    totalDifference();
+                    var bestMatch = {
+                        currentUser: '',
+                        match: {},
+                        score: 0
+                    }
+
+                    for (var i = 0; i < response.length; i++) {
+                        totalDifference(CURRENTFRIEND.SCORESARR[j], FRIENDS[j].SCORESARR[j]);
+                        var result;
+                        if (response[i].name != custData.name) {
+                            // then run a function that checks their score.
+                            result = checkScore(response[i].scores, custData.scores);
+                            if (result > bestMatch.score) {
+                                bestMatch.currentUser = custData.name;
+                                bestMatch.match = response[i];
+                                bestMatch.score = result;
+                            }
+                        }
+                    }
+                    console.log(bestMatch.match.name);
+                    console.log(bestMatch.match.photo);
+                    $("#matchName").text(bestMatch.match.name);
+                    $("#matchImg").attr("src", bestMatch.match.photo);
+                })
+                // Show the modal.
+                $("#myModal").modal("show");
+            } else if (formValidation() == false) {
+                alert("Please fill out all fields before submitting!");
+            } else {
+                alert("Something went wrong, try again.");
+            }
+            return false;
+        });
+    })
+</script>

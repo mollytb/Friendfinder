@@ -1,0 +1,21 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "like a dating app, but not",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Molly Burns",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "Router": "^2.1.0",
+    "body-parser": "^1.18.2",
+    "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "jshint": "^2.9.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
